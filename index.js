@@ -4,20 +4,6 @@ const split = require('split2');
 const request = require('request');
 const urlFile = process.argv[2];
 
-class TaskQueue {
-    constructor(concurrency) {
-        super()
-        this.tasks = [];
-        this.concurrency = concurrency || 3;
-        this.current = 0;
-    }
-
-    addTask(task) {
-        this.tasks.push(task);
-        return this;
-    }
-}
-
 class ParallelStream extends stream.Transform {
     constructor(userTransform) {
         super();
