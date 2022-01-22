@@ -1,0 +1,16 @@
+{
+  "name": "aads",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": "index.js",
+  "keywords": [],
+  "author": "Nowfal",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^17.0.10",
+    "request": "^2.88.2",
+    "split": "^1.0.1",
+    "split2": "^4.1.0"
+  }
+}
