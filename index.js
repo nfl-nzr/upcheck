@@ -20,6 +20,7 @@ class ParallelStream extends stream.Transform {
 
     _flush(done) {
         if (this.running > 0) {
+		console.log('Flushing buffer.')
             this.terminateCallback = done;
         } else {
             done()
